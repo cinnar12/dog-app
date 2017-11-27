@@ -5,6 +5,10 @@ body {
   font-family: "Roboto", Arial, sans-serif;
 }
 
+#main {
+  display: none;
+}
+
 h2 {
   color: white;
   font-family: "Roboto", "Comic Sans MS", sans-serif;
@@ -16,10 +20,27 @@ h2 {
   border: 1px solid white;
   padding: .75em 3em;
   font-size: 16px;
+  text-decoration: none;
   -webkit-transition-duration: .3s;
   transition-duration: .3s;
 }
 
 .mainbutton:hover {
   background: teal;
+}
+
+table, td {
+  padding: 1em;
+  background: white;
+}
+
+a {
+  text-decoration: none;
+  color: teal;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+}
+
+a:hover {
+  color: grey;
 }
