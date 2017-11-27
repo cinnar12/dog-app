@@ -1,3 +1,7 @@
 $(document).ready(function(){
-  $(".container").fadeIn(750);
+  $(".wrapper").fadeIn(750);
+});
+
+$("#navicon").click(function(){
+  $("nav").slideToggle();
 });
