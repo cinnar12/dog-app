@@ -1,24 +1,33 @@
 body {
+
   background: #1abc9c;
   font-family: sans-serif;
   color: #222;
   font-family: "Roboto", Arial, sans-serif;
 }
 
-#main {
+.container {
   display: none;
+  width: 75%;
+  margin: auto;
 }
 
 h2 {
+  text-align: center;
   color: white;
   font-family: "Roboto", "Comic Sans MS", sans-serif;
 }
 
+.buttons {
+  text-align: center;
+  margin: 2em;
+}
 .mainbutton {
   background-color: #1abc9c;
   color: white;
   border: 1px solid white;
   padding: .75em 3em;
+  margin: .5em;
   font-size: 16px;
   text-decoration: none;
   -webkit-transition-duration: .3s;
@@ -27,6 +36,7 @@ h2 {
 
 .mainbutton:hover {
   background: teal;
+  color: white;
 }
 
 table, td {
@@ -43,4 +53,12 @@ a {
 
 a:hover {
   color: grey;
+}
+
+footer {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+
 }
