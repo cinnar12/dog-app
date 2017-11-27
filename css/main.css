@@ -1,0 +1,25 @@
+body {
+  background: #1abc9c;
+  font-family: sans-serif;
+  color: #222;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+h2 {
+  color: white;
+  font-family: "Roboto", "Comic Sans MS", sans-serif;
+}
+
+.mainbutton {
+  background-color: #1abc9c;
+  color: white;
+  border: 1px solid white;
+  padding: .75em 3em;
+  font-size: 16px;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+}
+
+.mainbutton:hover {
+  background: teal;
+}
