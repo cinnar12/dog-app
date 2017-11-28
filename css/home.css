@@ -1,0 +1,20 @@
+.buttons {
+  text-align: center;
+  margin: 2em;
+}
+.mainbutton {
+  background-color: #1abc9c;
+  color: white;
+  border: 1px solid white;
+  padding: .75em 3em;
+  margin: .5em;
+  font-size: 16px;
+  text-decoration: none;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+}
+
+.mainbutton:hover {
+  background: teal;
+  color: white;
+}
