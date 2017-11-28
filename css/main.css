@@ -89,10 +89,15 @@ nav ul li{
 }
 
 .navicon {
-  display: none;
   overflow: hidden;
   float: right;
   color: white;
+  display: none;
+  margin-right: 40px;
+  margin-top: 13px;
+  font-size: 16px;
+  background: none;
+  border: none;
 }
 
 .logo {
@@ -109,4 +114,13 @@ footer {
 }
 
 @media (max-width: 600px) {
+
+nav {
+  display: none;
+}
+
+.navicon {
+  display: block;
+}
+
 }
