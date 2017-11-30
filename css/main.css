@@ -1,5 +1,4 @@
 body {
-  width: 100%;
   background: #1abc9c;
   font-family: sans-serif;
   color: #222;
@@ -9,12 +8,6 @@ body {
 
 .wrapper {
   display: none;
-}
-
-.container {
-  width: 75%;
-  margin: auto;
-  margin-top: 50px;
 }
 
 h2 {
@@ -36,4 +29,8 @@ a:hover {
 
 footer {
   text-align: center;
+}
+
+@media (max-width: 600) {
+
 }

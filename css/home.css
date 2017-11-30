@@ -1,14 +1,25 @@
+#container {
+  width: 50%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+#container p {
+  font-size: 20px;
+}
+
 .buttons {
   text-align: center;
   margin: 2em;
+  font-size: 20px;
 }
 .mainbutton {
   background-color: #1abc9c;
   color: white;
-  border: 1px solid white;
+  border: 2px solid white;
   padding: .75em 3em;
   margin: .5em;
-  font-size: 16px;
+  display: inline-block;
   text-decoration: none;
   -webkit-transition-duration: .3s;
   transition-duration: .3s;
@@ -17,4 +28,26 @@
 .mainbutton:hover {
   background: teal;
   color: white;
+}
+
+@media (max-width: 1400px) {
+  #container {
+    width: 70%;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  #container p, h2 {
+    padding: 0 1em;
+  }
+#container {
+    margin: 0;
+    margin-top: 50px;
+    width: 100%;
+  }
+.mainbutton {
+  display: block;
+}
+
 }
