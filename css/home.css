@@ -1,6 +1,7 @@
+/*main*/
+
 body {
   background: #1abc9c;
-  font-family: sans-serif;
   color: #222;
   font-family: "Roboto", Arial, sans-serif;
   margin: 0;
@@ -30,6 +31,8 @@ a:hover {
 footer {
   text-align: center;
 }
+
+/*content*/
 
 #container {
   width: 50%;
@@ -63,6 +66,47 @@ footer {
   color: white;
 }
 
+/*keyboard*/
+
+#keyboard {
+  display: block;
+  position: fixed;
+  bottom: -5px;
+}
+
+
+
+.keyboard {
+  display: inline-block;
+}
+
+.keyboard img{
+  max-height: 300px;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+}
+
+.keyboard:hover img {
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+.keyboard:active img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.attribution {
+  width: 200px;
+  margin: auto;
+  font-size: 12px !important;
+  display: none;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+}
+
+/*media queries*/
+
 @media (max-width: 1400px) {
   #container {
     width: 70%;
@@ -74,13 +118,13 @@ footer {
   #container p, h2 {
     padding: 0 1em;
   }
-#container {
+  #container {
     margin: 0;
     margin-top: 50px;
     width: 100%;
   }
-.mainbutton {
-  display: block;
-}
+  .mainbutton {
+    display: block;
+  }
 
 }
