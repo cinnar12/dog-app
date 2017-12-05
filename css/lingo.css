@@ -103,9 +103,40 @@ td {
   padding: 1em;
 }
 
+.showmore {
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+}
+
+.showmore:hover {
+  background: lightgrey;
+}
+
+#splootex {
+  width: 100%;
+  display: none;
+}
+
+#splootex2 {
+  width: 100%;
+  font-size: 12px !important;
+  display: none;
+}
+
+#gabethedog {
+  width: 100%;
+  display: none;
+}
+
 @media (max-width: 1400px) {
   #container {
-    width: 70%;
+    width: 65%;
+  }
+}
+
+@media (max-width: 1000px) {
+  #container {
+    width: 80%;
   }
 }
 

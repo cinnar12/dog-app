@@ -17,6 +17,13 @@ h2 {
   font-family: "Roboto", "Comic Sans MS", sans-serif;
 }
 
+h3 {
+  padding-top: 75px;
+  text-align: center;
+  color: white;
+  font-family: "Roboto", "Comic Sans MS", sans-serif;
+}
+
 a {
   text-decoration: none;
   color: teal;
@@ -68,20 +75,12 @@ footer {
 
 /*keyboard*/
 
-#keyboard {
-  display: block;
-  position: fixed;
-  bottom: -5px;
-}
-
-
-
 .keyboard {
   display: inline-block;
 }
 
 .keyboard img{
-  max-height: 300px;
+  max-height: 350px;
   -webkit-transition-duration: .2s;
   transition-duration: .2s;
 }
@@ -99,10 +98,17 @@ footer {
 .attribution {
   width: 200px;
   margin: auto;
-  font-size: 12px !important;
+  font-size: 12px;
   display: none;
   -webkit-transition-duration: .2s;
   transition-duration: .2s;
+}
+
+#keyboard {
+  position: fixed;
+  bottom: -5px;
+  display: block;
+  margin: auto;
 }
 
 /*media queries*/
