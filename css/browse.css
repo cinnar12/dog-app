@@ -86,17 +86,183 @@ nav ul li{
 }
 
 #container {
-  width: 50%;
+  width: 90%;
   margin: auto;
   margin-top: 50px;
+  text-align: center;
+}
+
+select {
+  margin: 5px;
+  border: none;
+  border-radius: 7px;
+  padding: 5px;
 }
 
 /*Dogs*/
+#browse{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#corgi {
+  flex:1;
+  align-self: flex-end;
+}
+
+#pug {
+  flex:0.6847;
+  align-self: flex-end;
+}
+
+#husky {
+  flex:0.8845;
+  align-self: flex-end;
+}
+
+#shiba {
+  flex:0.7429;
+  align-self: flex-end;
+}
+
+#pom {
+  flex:0.7620;
+  align-self: flex-end;
+}
+
+#golden {
+  flex:0.8845;
+  align-self: flex-end;
+}
+
+#chihuahua {
+  flex:0.4588;
+  align-self: flex-end;
+}
+
+/*Preview images*/
+.preview {
+  max-width: 30%;
+}
+
+.preview img {
+  width: 100%;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+}
+
+.preview:hover img {
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+.preview:active img{
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.preview button {
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+  background: none;
+  border: none;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+}
+
+.preview:hover button {
+  color: white;
+  background: teal;
+
+}
+
+/*Information boxes*/
+.close {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  color: grey;
+  background: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  text-align: center;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+}
+
+.close:hover {
+  color: teal;
+  background: lightgrey;
+}
+
+.facts {
+  display: none;
+  overflow: auto;
+  background: white;
+  border-radius: 5px;
+  width: 75%;
+  height: 95%;
+  margin: auto;
+  z-index: 1;
+  position: fixed;
+  bottom: -5px;
+}
+
+.facts article {
+  float: right;
+  width: 65%;
+}
+
+.facts img {
+  width: 30%;
+  float: left;
+}
+
+.browsecontent {
+  padding: 0 20px;
+  padding-bottom: 10px;
+}
+
+.attribution {
+  font-size: 12px;
+}
 
 
 @media (max-width: 1400px) {
   #container {
     width: 70%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .preview {
+    max-width: 45%;
+  }
+
+  .facts article {
+    float: none;
+    width: 100%;
+  }
+
+  .facts img {
+    width: 75%;
+    float: none;
+    display: block;
+    margin: auto;
+  }
+
+  .attribution {
+    width: 90%;
+    display: block;
+    margin: auto;
   }
 }
 
@@ -139,6 +305,18 @@ nav ul li{
   #container {
     margin: 0;
     margin-top: 50px;
+    width: 100%;
+  }
+
+  .preview {
+    max-width: 100%;
+  }
+
+  .facts {
+    width: 100%;
+  }
+
+  .facts img {
     width: 100%;
   }
 

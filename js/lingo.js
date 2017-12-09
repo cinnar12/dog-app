@@ -14,3 +14,17 @@ $("#sploot").click(function(){
   $("#splootex").slideToggle();
   $("#splootex2").slideToggle();
 });
+
+$("#frightening").click(function(){
+  $("#fright").slideToggle();
+  $("#frighten").slideToggle();
+});
+
+$("#brant").click(function(){
+  $("#brent").slideToggle();
+  $("#bront").slideToggle();
+});
+
+$("#boof").click(function(){
+  $("#boofer").slideToggle();
+});

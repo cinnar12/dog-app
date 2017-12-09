@@ -6,69 +6,140 @@ $("#navicon").click(function(){
   $("nav").slideToggle();
 });
 
-$("#gabe").click(function(){
-  $("#gabethedog").slideToggle();
+function showAll() {
+  $("#corgi").fadeIn();
+  $("#pug").fadeIn();
+  $("#husky").fadeIn();
+  $("#shiba").fadeIn();
+  $("#pom").fadeIn();
+  $("#golden").fadeIn();
+  $("#german").fadeIn();
+  $("#chihuahua").fadeIn();
+  $("#dachshund").fadeIn();
+  $("#samoyed").fadeIn();
+}
+
+function hideAll() {
+  $("#corgi").fadeOut();
+  $("#pug").fadeOut();
+  $("#husky").fadeOut();
+  $("#shiba").fadeOut();
+  $("#pom").fadeOut();
+  $("#golden").fadeOut();
+  $("#german").fadeOut();
+  $("#chihuahua").fadeOut();
+  $("#dachshund").fadeOut();
+  $("#samoyed").fadeOut();
+}
+
+//Category filters
+$('select').change(function () {
+  hideAll();
+    if ($(this).find('option:selected').val() == "null") {
+      showAll();
+    }
+    else if ($(this).find('option:selected').val() == "size1") {
+      $("#corgi").fadeIn();
+      $("#pom").fadeIn();
+      $("#chihuahua").fadeIn();
+      $("#dachshund").fadeIn();
+    }
+    else if ($(this).find('option:selected').val() == "size2") {
+      $("#pug").fadeIn();
+      $("#shiba").fadeIn();
+    }
+    else if ($(this).find('option:selected').val() == "size3") {
+      $("#husky").fadeIn();
+      $("#golden").fadeIn();
+      $("#german").fadeIn();
+      $("#samoyed").fadeIn();
+    }
+    else if ($(this).find('option:selected').val() == "family") {
+      $("#corgi").fadeIn();
+      $("#golden").fadeIn();
+      $("#husky").fadeIn();
+
+    };
 });
 
-$("#sploot").click(function(){
-  $("#splootex").slideToggle();
-  $("#splootex2").slideToggle();
-});
 
-//attribution
-$("#corgi").hover( function() {
-  $("#att1").fadeToggle(300);
-});
-
-$("#pug").hover( function() {
-  $("#att2").fadeToggle(300);
-});
-
-$("#husky").hover( function() {
-  $("#att3").fadeToggle(300);
-});
-
-$("#shiba").hover( function() {
-  $("#att4").fadeToggle(300);
-});
-
-$("#pom").hover( function() {
-  $("#att5").fadeToggle(300);
-});
-
-$("#golden").hover( function() {
-  $("#att6").fadeToggle(300);
-});
-
-$("#chihuahua").hover( function() {
-  $("#att7").fadeToggle(300);
-});
-
-//barking
+//click
 $("#corgi").click(function() {
-  new Audio("audio/barks1.mp3").play();
+  $("#corgifacts").slideToggle();
+});
+
+$("#corgiclose").click(function() {
+  $("#corgifacts").slideToggle();
 });
 
 $("#pug").click(function() {
-  new Audio("audio/barks2.mp3").play();
+  $("#pugfacts").slideToggle();
+});
+
+$("#pugclose").click(function() {
+  $("#pugfacts").slideToggle();
 });
 
 $("#husky").click(function() {
-  new Audio("audio/barks3.mp3").play();
+  $("#huskyfacts").slideToggle();
+});
+
+$("#huskyclose").click(function() {
+  $("#huskyfacts").slideToggle();
 });
 
 $("#shiba").click(function() {
-  new Audio("audio/barks4.mp3").play();
+  $("#shibafacts").slideToggle();
+});
+
+$("#shibaclose").click(function() {
+  $("#shibafacts").slideToggle();
 });
 
 $("#pom").click(function() {
-  new Audio("audio/barks5.mp3").play();
+  $("#pomfacts").slideToggle();
+});
+
+$("#pomclose").click(function() {
+  $("#pomfacts").slideToggle();
 });
 
 $("#golden").click(function() {
-  new Audio("audio/barks6.mp3").play();
+  $("#goldenfacts").slideToggle();
+});
+
+$("#goldenclose").click(function() {
+  $("#goldenfacts").slideToggle();
+});
+
+$("#german").click(function() {
+  $("#germanfacts").slideToggle();
+});
+
+$("#germanclose").click(function() {
+  $("#germanfacts").slideToggle();
 });
 
 $("#chihuahua").click(function() {
-  new Audio("audio/barks7.mp3").play();
+  $("#chihuahuafacts").slideToggle();
+});
+
+$("#chihuahuaclose").click(function() {
+  $("#chihuahuafacts").slideToggle();
+});
+
+$("#dachshund").click(function() {
+  $("#dachshundfacts").slideToggle();
+});
+
+$("#dachshundclose").click(function() {
+  $("#dachshundfacts").slideToggle();
+});
+
+$("#samoyed").click(function() {
+  $("#samoyedfacts").slideToggle();
+});
+
+$("#samoyedclose").click(function() {
+  $("#samoyedfacts").slideToggle();
 });

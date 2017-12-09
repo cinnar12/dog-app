@@ -18,7 +18,6 @@ h2 {
 }
 
 h3 {
-  padding-top: 75px;
   text-align: center;
   color: white;
   font-family: "Roboto", "Comic Sans MS", sans-serif;
@@ -39,7 +38,7 @@ footer {
   text-align: center;
 }
 
-/*content*/
+/*home*/
 
 #container {
   width: 50%;
@@ -53,7 +52,7 @@ footer {
 
 .buttons {
   text-align: center;
-  margin: 2em;
+  margin: 1em;
   font-size: 20px;
 }
 .mainbutton {
@@ -75,12 +74,52 @@ footer {
 
 /*keyboard*/
 
-.keyboard {
-  display: inline-block;
+#keyboard {
+  margin-left: 1em;
+  margin-right: 1em;
+  justify-content: center;
+  display: flex;
+  position: fixed;
+  bottom: -5px;
 }
 
-.keyboard img{
-  max-height: 350px;
+#corgi {
+  flex:0.8333;
+  align-self: flex-end;
+}
+
+#pug {
+  flex:0.6847;
+  align-self: flex-end;
+}
+
+#husky {
+  flex:0.8845;
+  align-self: flex-end;
+}
+
+#shiba {
+  flex:0.7429;
+  align-self: flex-end;
+}
+
+#pom {
+  flex:0.7620;
+  align-self: flex-end;
+}
+
+#golden {
+  flex:0.8845;
+  align-self: flex-end;
+}
+
+#chihuahua {
+  flex:0.4588;
+  align-self: flex-end;
+}
+
+.keyboard img {
+  max-width: 100%;
   -webkit-transition-duration: .2s;
   transition-duration: .2s;
 }
@@ -96,19 +135,16 @@ footer {
 }
 
 .attribution {
-  width: 200px;
-  margin: auto;
   font-size: 12px;
+  max-width: 200px;
+  margin: auto;
   display: none;
   -webkit-transition-duration: .2s;
   transition-duration: .2s;
 }
 
-#keyboard {
-  position: fixed;
-  bottom: -5px;
-  display: block;
-  margin: auto;
+#keyatt {
+  font-size: 12px;
 }
 
 /*media queries*/
@@ -117,6 +153,12 @@ footer {
   #container {
     width: 70%;
     margin-top: 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  #keyboard {
+    display: none;
   }
 }
 

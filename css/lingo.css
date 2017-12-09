@@ -92,7 +92,7 @@ nav ul li{
 }
 
 table {
-  display: block;
+  display: flex;
   margin: auto;
   padding: 1em;
   background: white;
@@ -112,6 +112,28 @@ td {
   background: lightgrey;
 }
 
+#brent {
+  width: 100%;
+  display: none;
+}
+
+#bront {
+  width: 100%;
+  font-size: 12px !important;
+  display: none;
+}
+
+#fright {
+  width: 100%;
+  display: none;
+}
+
+#frighten {
+  width: 100%;
+  font-size: 12px !important;
+  display: none;
+}
+
 #splootex {
   width: 100%;
   display: none;
@@ -124,6 +146,11 @@ td {
 }
 
 #gabethedog {
+  width: 100%;
+  display: none;
+}
+
+#boofer {
   width: 100%;
   display: none;
 }
@@ -184,7 +211,13 @@ td {
 
   table {
     width: auto;
+    padding: .5em;
   }
+
+  td {
+    padding: 10px 0;
+  }
+  
 }
 
 @media (min-width: 601px) {

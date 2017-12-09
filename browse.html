@@ -22,21 +22,217 @@
   <div class="wrapper">
     <div id="container">
       <h2>Browse Dogs</h2>
-      <p>Browse by Category</p>
-      <select>
-        <option value="null">View All</option>
-        <option value="size1">Smol Dogs</option>
-        <option value="size3">Medium Dogs</option>
-        <option value="size2">Big Dogs</option>
-        <option value="family">Family Dogs</option>
-      </select>
-      <div id="corgi">
-        <img class="dogs" src="images/corgi_b.png" alt="Pembroke Welsh Corgi">
-        <p class="attribution">"EIN 今朝のお散歩♪" by luckyno3 on <a href="https://www.flickr.com/photos/luckyno3/35269733440/in/photolist-VJEAYq-64VWqG-9ZV4T4-8cbsXq-9mxttd-8hrejY-8hrf85-4i3FPS-8JdSLD-8TcNWq-8hrdJA-8hrdTq-5U6S7q-8JgXzL-8hreCG-qSZdmj-8hnZ5r-6p4Hpz-29iyWm-5Hf8t5-QEiUgv-8wk1Yj-DrjDj-8hnXV2-RQCqSQ-29ea7i-5Hapsa-5hJCrt-b1RX5F-RUgiRc-RjEygh-29e5Bp-8hrcVf-aep9QF-9vfB34-VVUznY-cbY8RS-5TwdvR-oYT6td-hXitpb-QBKGAo-DrqR7-DtugW-cRpws-67vpVj-RHkaQB-esL7n8-4wi5Uc-8c868x-5iRzc">flickr.com</a>, used under <a href="https://creativecommons.org/licenses/by-nc/2.0/">CC BY-NC 2.0</a> / Cropped and edited from original</p>
+      <p>Learn more about these popular breeds before you rush into adoption! Click each dog to view more.</p>
+      <label>Browse by Category</label>
+      <div class="btnstyle">
+        <select>
+          <option value="null" id="null">View All</option>
+          <option value="size1">Smol Dogs</option>
+          <option value="size2">Medium Dogs</option>
+          <option value="size3">Big Dogs</option>
+          <option value="family">Family Dogs</option>
+        </select>
       </div>
     </div>
+    <div id="browse">
+        <div class="preview" id="corgi">
+          <img class="dogs" src="images/corgi_b.png" alt="Pembroke Welsh Corgi">
+          <button>Pembroke Welsh Corgi</button>
+        </div>
+        <div class="facts" id="corgifacts">
+          <button class="close" id="corgiclose">Click to Close</button>
+          <div class="browsecontent">
+          <img class="dogs" src="images/corgi_b.png" alt="Pembroke Welsh Corgi">
+          <article>
+          <p class="attribution">"EIN 今朝のお散歩♪" by luckyno3 on <a href="https://www.flickr.com/photos/luckyno3/35269733440/in/photolist-VJEAYq-64VWqG-9ZV4T4-8cbsXq-9mxttd-8hrejY-8hrf85-4i3FPS-8JdSLD-8TcNWq-8hrdJA-8hrdTq-5U6S7q-8JgXzL-8hreCG-qSZdmj-8hnZ5r-6p4Hpz-29iyWm-5Hf8t5-QEiUgv-8wk1Yj-DrjDj-8hnXV2-RQCqSQ-29ea7i-5Hapsa-5hJCrt-b1RX5F-RUgiRc-RjEygh-29e5Bp-8hrcVf-aep9QF-9vfB34-VVUznY-cbY8RS-5TwdvR-oYT6td-hXitpb-QBKGAo-DrqR7-DtugW-cRpws-67vpVj-RHkaQB-esL7n8-4wi5Uc-8c868x-5iRzc">flickr.com</a>, used under <a href="https://creativecommons.org/licenses/by-nc/2.0/">CC BY-NC 2.0</a> / Cropped and edited from original</p>
+          <h3>Pembroke Welsh Corgi</h3>
+          <p><i>The internet knows them for their adorable jiggle butts and iconic sploots. Even Queen Elizabeth II has her own Royal Corgis.</i>
+            <br><br>
+            Pembroke Welsh Corgis are short and sturdy working dogs in the herding group. They’re smart, affectionate and bold dogs that enjoy physical activity. They are one of the most agreeable small house dogs and do well under supervision with children and other dogs.
+            <br><br>
+            They’re ranked at #11 in intelligence according to <i>The Intelligence of Dogs</i> by Stanley Coren, and at #18 in popular breeds on the American Kennel Club’s registration as of 2016.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="preview" id="pug">
+        <img class="dogs" src="images/keyboard/pug.png" alt="Pug">
+        <button>Pug</button>
+      </div>
+      <div class="facts" id="pugfacts">
+        <button class="close" id="pugclose">Click to Close</button>
+        <div class="browsecontent">
+        <img class="dogs" src="images/keyboard/pug.png" alt="Pug">
+        <article>
+        <p class="attribution">"pug" by Andrew Yang on <a href="https://www.flickr.com/photos/andrewyang/71724450/">flickr.com</a>, used under <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC BY-NC-SA 2.0</a> / Cropped and edited from original</p>
+        <h3>Pug</h3>
+        <p><i>Their smushed faces can be ugly; but in a cute way.</i>
+          <br><br>
+          Pugs are sturdy and compact dogs belonging to the companion dog group. They tend to be lap dogs and loves human interactions. Even though they have short fur coats, they tend to shed a lot.
+          <br><br>
+          Pugs originated from China dating back to the Han dynasty and were bred to be royal lap dogs.
+        </article>
+      </div>
+    </div>
+
+    <div class="preview" id="husky">
+      <img class="dogs" src="images/keyboard/husky.png" alt="Siberian Husky">
+      <button>Siberian Husky</button>
+    </div>
+    <div class="facts" id="huskyfacts">
+      <button class="close" id="huskyclose">Click to Close</button>
+      <div class="browsecontent">
+      <img class="dogs" src="images/keyboard/husky.png" alt="Siberian Husky">
+      <article>
+      <p class="attribution">"P2120034.jpg" by Chris Yates on <a href="https://www.flickr.com/photos/bufflehead/32743732001/">flickr.com</a>, used under <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC BY-NC-SA 2.0</a> / Cropped and edited from original</p>
+      <h3>Siberian Husky</h3>
+      <p><i>They are famous for their funny howling and adorable temper tantrums videos on Youtube.</i>
+        <br><br>
+        Siberian Huskies are energetic working dogs. Because of their intelligence and independence, they may require more dog-owning experience to handle and can also be quite stubborn when teaching. However, they are a very affectionate dog breed and loves to cuddle with their family members.
+        <br><br>
+        Originated in northeastern Siberia (hence their name), they were bred by Chukchi Eskimos to pull heavy loads long distances attached to a sled and are good sled dogs.
+      </article>
+    </div>
   </div>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/browse.js"></script>
-</body>
-</html>
+
+  <div class="preview" id="shiba">
+    <img class="dogs" src="images/keyboard/shiba.png" alt="Shiba Inu">
+    <button>Shiba Inu</button>
+  </div>
+  <div class="facts" id="shibafacts">
+    <button class="close" id="shibaclose">Click to Close</button>
+    <div class="browsecontent">
+    <img class="dogs" src="images/keyboard/shiba.png" alt="Shiba Inu">
+    <article>
+    <p class="attribution">"Hoshi smelling flowers" by artistique on <a href="https://www.flickr.com/photos/artistique/8445888345/">flickr.com</a>, used under <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC BY-NC-SA 2.0</a> / Cropped from original</p>
+    <h3>Shiba Inu</h3>
+    <p><i>Known for the iconic doge memes.</i>
+      <br><br>
+      Shiba Inu dogs are keen and bold in the companion dog group. They are not the easiest breed to train and requires an experienced owner to teach these canine proper manners. They are one of six breeds native to Japan.
+    </article>
+  </div>
+</div>
+
+<div class="preview" id="pom">
+  <img class="dogs" src="images/keyboard/pom.png" alt="Pomeranian">
+  <button>Pomeranian</button>
+</div>
+<div class="facts" id="pomfacts">
+  <button class="close" id="pomclose">Click to Close</button>
+  <div class="browsecontent">
+  <img class="dogs" src="images/keyboard/pom.png" alt="Pomeranian">
+  <article>
+  <p class="attribution">"Happy Jordy" by Keira Morgan on <a href="https://www.flickr.com/photos/keiramellis/7300114492/">flickr.com</a>, used under <a href="https://creativecommons.org/licenses/by-nc/2.0/">CC BY-NC 2.0</a> / Cropped from original</p>
+  <h3>Pomeranian</h3>
+  <p><i>Super floofs. Gabe the Dog was half-Pomeranian.</i>
+    <br><br>
+    Pomeranians are cute, feisty and fluffy dogs in the companion dog group. They tend to very vocal dogs and can tend to have a ‘big dog’ attitude although they are small which can spell trouble for them.
+    <br><br>
+    Be watchful of your smaller Pomeranians when at a dog park because they can be targets for birds of prey.
+  </article>
+</div>
+</div>
+
+<div class="preview" id="golden">
+  <img class="dogs" src="images/keyboard/golden.png" alt="Golden Retriever">
+  <button>Golden Retriever</button>
+</div>
+<div class="facts" id="goldenfacts">
+  <button class="close" id="goldenclose">Click to Close</button>
+  <div class="browsecontent">
+  <img class="dogs" src="images/keyboard/golden.png" alt="Golden Retriever">
+  <article>
+  <p class="attribution">"DSC00015" by Jenny van Twillert on <a href="https://www.flickr.com/photos/janvantwillert/202062144/">flickr.com</a>, used under <a href="https://creativecommons.org/licenses/by-nc/2.0/">CC BY-NC 2.0</a> / Cropped and edited from original</p>
+  <h3>Golden Retriever</h3>
+  <p><i>This dog breed is the poster dog for the good boy memes and being dressed up in occupational uniforms.</i>
+    <br><br>
+    Golden Retrievers are intelligent and energetic dogs from the sporting dog group. They are playful, affectionate, and tend to be an easy to train bog breed with a sweet and calm nature. They tend to shed a lot so be ready to pull out your vacuum.
+    <br><br>
+    They were bred to retrieve shot ‘game’ animals while hunting hence their name. Golden Retrievers rank #3 for popular dog breeds on the American Kennel Club’s registration since 2016.
+  </article>
+</div>
+</div>
+
+<div class="preview" id="german">
+  <img class="dogs" src="images/keyboard/german.png" alt="German Shepherd">
+  <button>German Shepherd</button>
+</div>
+<div class="facts" id="germanfacts">
+  <button class="close" id="germanclose">Click to Close</button>
+  <div class="browsecontent">
+  <img class="dogs" src="images/keyboard/german.png" alt="German Shepherd">
+  <article>
+  <p class="attribution"></p>
+  <h3>German Shepherd</h3>
+  <p><i>text text</i>
+    <br><br>
+    German Shepherds are intelligent, courageous and capable dogs belonging to the working dog breed. They're very obedient and eager to please their owners and are good with children and under supervision with other dogs. They are a highly flexible breed and can be used for a number of tasks such as guide dogs, police dogs, herding dogs, and as pets.
+  </article>
+</div>
+</div>
+
+<div class="preview" id="chihuahua">
+  <img class="dogs" src="images/keyboard/chihuahua.png" alt="Chihuahua">
+  <button>Chihuahua</button>
+</div>
+<div class="facts" id="chihuahuafacts">
+  <button class="close" id="chihuahuaclose">Click to Close</button>
+  <div class="browsecontent">
+  <img class="dogs" src="images/keyboard/chihuahua.png" alt="Chihuahua">
+  <article>
+  <p class="attribution">"Bea" by Stephane Venne on <a href="https://www.flickr.com/photos/ennev/12472191423/">flickr.com</a>, used under <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC BY-NC-SA 2.0</a> / Cropped and edited from original</p>
+  <h3>Chihuahua</h3>
+  <p><i>They are the handbag yappers known for their sassiness and featured in many movies and with celebrities.</i>
+    <br><br>
+    Chihuahuas are small sized dogs with big personalities in the companion dog group. They tend to not be friendly towards other dogs and see them as hostile toward their owners. They like nothing more than to be close to their owners at all times, so people tend to carry these dogs along when they travel.
+  </article>
+</div>
+</div>
+
+<div class="preview" id="dachshund">
+  <img class="dogs" src="images/dachshund.png" alt="Dachshund">
+  <button>Dachshund</button>
+</div>
+<div class="facts" id="dachshundfacts">
+  <button class="close" id="dachshundclose">Click to Close</button>
+  <div class="browsecontent">
+  <img class="dogs" src="images/dachshund.png" alt="Dachshund">
+  <article>
+  <p class="attribution"></p>
+  <h3>Dachshund</h3>
+  <p><i>They're the hot dog-shaped doggos!</i>
+    <br><br>
+    Dachshunds are short-legged, long-bodied dogs belonging to the hound dog group. They can tend to become stubborn and lazy so be sure to keep them well-trained and active.
+    <br><br>
+    Dachshunds were known as badger dogs, ‘dachs’ means badger and ‘hund’ means dog.
+  </article>
+</div>
+</div>
+
+<div class="preview" id="samoyed">
+  <img class="dogs" src="images/samoyed.png" alt="Samoyed">
+  <button>Samoyed</button>
+</div>
+<div class="facts" id="samoyedfacts">
+  <button class="close" id="samoyedclose">Click to Close</button>
+  <div class="browsecontent">
+  <img class="dogs" src="images/samoyed.png" alt="Samoyed">
+  <article>
+  <p class="attribution"></p>
+  <h3>Samoyed</h3>
+  <p><i>These floofy clouds are often seen being adorable on Instagram.</i>
+    <br><br>
+    Samoyed are strong-willed, friendly, and devoted family dogs belonging to the working dog breed. This breed to shed carpets upon carpets of fur so be ready. They are great dogs to be around children because of their friendliness and good-nature disposition.
+    <br><br>
+    Before being their cuddly, fluffy selves they were bred to be used for hunting, herding reindeer and hauling sledges for the Siberian Samoyede people.
+  </article>
+</div>
+</div>
+
+    </div>
+
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/browse.js"></script>
+  </body>
+  </html>
