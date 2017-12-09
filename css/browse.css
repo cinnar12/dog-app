@@ -108,41 +108,6 @@ select {
   flex-wrap: wrap;
 }
 
-#corgi {
-  flex:1;
-  align-self: flex-end;
-}
-
-#pug {
-  flex:0.6847;
-  align-self: flex-end;
-}
-
-#husky {
-  flex:0.8845;
-  align-self: flex-end;
-}
-
-#shiba {
-  flex:0.7429;
-  align-self: flex-end;
-}
-
-#pom {
-  flex:0.7620;
-  align-self: flex-end;
-}
-
-#golden {
-  flex:0.8845;
-  align-self: flex-end;
-}
-
-#chihuahua {
-  flex:0.4588;
-  align-self: flex-end;
-}
-
 /*Preview images*/
 .preview {
   max-width: 30%;
