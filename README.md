@@ -18,3 +18,6 @@ Added category filters to show certain dogs when certain options are selected. T
 
 TROUBLES & PLANS:
 I had used filler images for the dogs and it worked like a charm. However, adding in actual photos did not work as planned, so I will probably find and edit new images soon. Making the keyboard for mobile was becoming a struggle, so I will probably switch the images to horizontal ones in the future.
+
+FINAL SUMMARY
+The dog keyboard will appear sideways for mobile users. Browse dog images have been added in. Overall, I thought this project was fun (because dogs are great), and I definitely learned a lot (I can sorta build a web app from scratch!). This project made me realize how great libraries are; I fell in love with the ease of JQuery and Flexbox and will probably experiment with CSS Grid in the future on my free time. I hope to come back and hopefully add a little bit more to this app too because there were a lot of things I would like to add if I had the chance.
