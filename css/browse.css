@@ -41,6 +41,7 @@ footer {
   width: 100%;
   position: fixed;
   height: 45px;
+  z-index: 1;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -111,6 +112,7 @@ select {
 /*Preview images*/
 .preview {
   max-width: 30%;
+  z-index: 0;
 }
 
 .preview img {

@@ -56,9 +56,11 @@ $('select').change(function () {
     }
     else if ($(this).find('option:selected').val() == "family") {
       $("#corgi").fadeIn();
+      $("#dachshund").fadeIn();
       $("#golden").fadeIn();
-      $("#husky").fadeIn();
-
+      $("#pug").fadeIn();
+      $("#samoyed").fadeIn();
+      $("#chihuahua").fadeIn();
     };
 });
 

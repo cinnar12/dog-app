@@ -59,3 +59,31 @@ $("#golden").click(function() {
 $("#chihuahua").click(function() {
   new Audio("audio/barks7.mp3").play();
 });
+
+$("#corgi2").click(function() {
+  new Audio("audio/barks1.mp3").play();
+});
+
+$("#pug2").click(function() {
+  new Audio("audio/barks2.mp3").play();
+});
+
+$("#husky2").click(function() {
+  new Audio("audio/barks3.mp3").play();
+});
+
+$("#shiba2").click(function() {
+  new Audio("audio/barks4.mp3").play();
+});
+
+$("#pom2").click(function() {
+  new Audio("audio/barks5.mp3").play();
+});
+
+$("#golden2").click(function() {
+  new Audio("audio/barks6.mp3").play();
+});
+
+$("#chihuahua2").click(function() {
+  new Audio("audio/barks7.mp3").play();
+});

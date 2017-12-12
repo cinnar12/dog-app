@@ -112,6 +112,10 @@ td {
   background: lightgrey;
 }
 
+.showmoreinfo {
+  color: darkgrey;
+}
+
 #brent {
   width: 100%;
   display: none;
@@ -211,13 +215,13 @@ td {
 
   table {
     width: auto;
-    padding: .5em;
   }
 
   td {
-    padding: 10px 0;
+    overflow: hidden;
+    padding: 10px 5px;
   }
-  
+
 }
 
 @media (min-width: 601px) {

@@ -73,6 +73,14 @@ footer {
 }
 
 /*keyboard*/
+#reskey {
+  display: none;
+  margin-left: 1em;
+  margin-right: 1em;
+  justify-content: center;
+  position: fixed;
+  bottom: -5px;
+}
 
 #keyboard {
   margin-left: 1em;
@@ -84,36 +92,85 @@ footer {
 }
 
 #corgi {
+  order: 1;
   flex:0.8333;
   align-self: flex-end;
 }
 
 #pug {
+  order: 2;
   flex:0.6847;
   align-self: flex-end;
 }
 
 #husky {
+  order: 3;
   flex:0.8845;
   align-self: flex-end;
 }
 
 #shiba {
+  order: 4;
   flex:0.7429;
   align-self: flex-end;
 }
 
 #pom {
+  order: 5;
   flex:0.7620;
   align-self: flex-end;
 }
 
 #golden {
+  order: 6;
   flex:0.8845;
   align-self: flex-end;
 }
 
 #chihuahua {
+  order: 7;
+  flex:0.4588;
+  align-self: flex-end;
+}
+
+#corgi2 {
+  order: 1;
+  flex:0.8333;
+  align-self: flex-end;
+}
+
+#pug2 {
+  order: 2;
+  flex:0.6847;
+  align-self: flex-end;
+}
+
+#husky2 {
+  order: 3;
+  flex:0.8845;
+  align-self: flex-end;
+}
+
+#shiba2 {
+  order: 4;
+  flex:0.7429;
+  align-self: flex-end;
+}
+
+#pom2 {
+  order: 5;
+  flex:0.7620;
+  align-self: flex-end;
+}
+
+#golden2 {
+  order: 6;
+  flex:0.8845;
+  align-self: flex-end;
+}
+
+#chihuahua2 {
+  order: 7;
   flex:0.4588;
   align-self: flex-end;
 }
@@ -132,6 +189,12 @@ footer {
 .keyboard:active img {
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+
+.keyboard2 img {
+  max-width: 100%;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
 }
 
 .attribution {
@@ -156,12 +219,6 @@ footer {
   }
 }
 
-@media (max-width: 1000px) {
-  #keyboard {
-    display: none;
-  }
-}
-
 @media (max-width: 600px) {
   #container p, h2 {
     padding: 0 1em;
@@ -174,5 +231,51 @@ footer {
   .mainbutton {
     display: block;
   }
+
+  #reskey {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: auto;
+    margin: 0;
+    margin-top: -40px;
+  }
+
+  #keyboard {
+    display: none;
+  }
+
+  .reskey1 {
+    height: 50px;
+    z-index: 0;
+    margin-top: 100px;
+  }
+
+  .reskey1 img {
+    transform: rotate(90deg);
+    margin-bottom: -60px;
+    margin-left: -50px;
+  }
+
+  .reskey2 {
+    height: 50px;
+    z-index: 1;
+  }
+
+  .reskey2 img {
+    transform: rotate(90deg);
+    margin-bottom: -60px;
+  }
+
+  #chihuahua2 {
+    margin-top: -90px;
+    width: 75%;
+  }
+
+  .attribution {
+    display: none !important;
+  }
+}
+
 
 }
