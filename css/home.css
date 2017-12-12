@@ -1,5 +1,4 @@
 /*main*/
-
 body {
   background: #1abc9c;
   color: #222;
@@ -73,15 +72,6 @@ footer {
 }
 
 /*keyboard*/
-#reskey {
-  display: none;
-  margin-left: 1em;
-  margin-right: 1em;
-  justify-content: center;
-  position: fixed;
-  bottom: -5px;
-}
-
 #keyboard {
   margin-left: 1em;
   margin-right: 1em;
@@ -133,48 +123,6 @@ footer {
   align-self: flex-end;
 }
 
-#corgi2 {
-  order: 1;
-  flex:0.8333;
-  align-self: flex-end;
-}
-
-#pug2 {
-  order: 2;
-  flex:0.6847;
-  align-self: flex-end;
-}
-
-#husky2 {
-  order: 3;
-  flex:0.8845;
-  align-self: flex-end;
-}
-
-#shiba2 {
-  order: 4;
-  flex:0.7429;
-  align-self: flex-end;
-}
-
-#pom2 {
-  order: 5;
-  flex:0.7620;
-  align-self: flex-end;
-}
-
-#golden2 {
-  order: 6;
-  flex:0.8845;
-  align-self: flex-end;
-}
-
-#chihuahua2 {
-  order: 7;
-  flex:0.4588;
-  align-self: flex-end;
-}
-
 .keyboard img {
   max-width: 100%;
   -webkit-transition-duration: .2s;
@@ -191,12 +139,6 @@ footer {
   transform: scale(1);
 }
 
-.keyboard2 img {
-  max-width: 100%;
-  -webkit-transition-duration: .2s;
-  transition-duration: .2s;
-}
-
 .attribution {
   font-size: 12px;
   max-width: 200px;
@@ -210,8 +152,12 @@ footer {
   font-size: 12px;
 }
 
-/*media queries*/
+#reskey {
+  display: none;
+}
 
+
+/*media queries*/
 @media (max-width: 1400px) {
   #container {
     width: 70%;
@@ -220,6 +166,10 @@ footer {
 }
 
 @media (max-width: 600px) {
+  #keyboard {
+    display: none;
+  }
+
   #container p, h2 {
     padding: 0 1em;
   }
@@ -241,8 +191,10 @@ footer {
     margin-top: -40px;
   }
 
-  #keyboard {
-    display: none;
+  .keyboard2 img {
+    max-width: 100%;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
   }
 
   .reskey1 {
@@ -267,7 +219,46 @@ footer {
     margin-bottom: -60px;
   }
 
+  #corgi2 {
+    order: 1;
+    flex:0.8333;
+    align-self: flex-end;
+  }
+
+  #pug2 {
+    order: 2;
+    flex:0.6847;
+    align-self: flex-end;
+  }
+
+  #husky2 {
+    order: 3;
+    flex:0.8845;
+    align-self: flex-end;
+  }
+
+  #shiba2 {
+    order: 4;
+    flex:0.7429;
+    align-self: flex-end;
+  }
+
+  #pom2 {
+    order: 5;
+    flex:0.7620;
+    align-self: flex-end;
+  }
+
+  #golden2 {
+    order: 6;
+    flex:0.8845;
+    align-self: flex-end;
+  }
+
   #chihuahua2 {
+    order: 7;
+    flex:0.4588;
+    align-self: flex-end;
     margin-top: -90px;
     width: 75%;
   }
@@ -275,7 +266,4 @@ footer {
   .attribution {
     display: none !important;
   }
-}
-
-
 }
