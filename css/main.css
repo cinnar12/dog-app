@@ -1,15 +1,9 @@
 body {
-
   background: #1abc9c;
   font-family: sans-serif;
   color: #222;
   font-family: "Roboto", Arial, sans-serif;
-}
-
-.container {
-  width: 75%;
-  margin: auto;
-  margin-top: 50px;
+  margin: 0;
 }
 
 .wrapper {
@@ -20,32 +14,6 @@ h2 {
   text-align: center;
   color: white;
   font-family: "Roboto", "Comic Sans MS", sans-serif;
-}
-
-.buttons {
-  text-align: center;
-  margin: 2em;
-}
-.mainbutton {
-  background-color: #1abc9c;
-  color: white;
-  border: 1px solid white;
-  padding: .75em 3em;
-  margin: .5em;
-  font-size: 16px;
-  text-decoration: none;
-  -webkit-transition-duration: .3s;
-  transition-duration: .3s;
-}
-
-.mainbutton:hover {
-  background: teal;
-  color: white;
-}
-
-table, td {
-  padding: 1em;
-  background: white;
 }
 
 a {
@@ -59,54 +27,10 @@ a:hover {
   color: grey;
 }
 
-header {
-  display: block;
-  top: 0;
-  left: 0;
-  position: fixed;
-  width: 100%;
-  height: 45px;
-}
-
-header a{
-  color: white;
-}
-
-header a:hover{
-  color: teal;
-}
-
-nav {
-  overflow: hidden;
-  float: right;
-  margin-top: -4px;
-}
-
-nav ul li{
-  display: inline-block;
-  padding-left: 10px;
-  padding-right: 15px;
-}
-
-.navicon {
-  display: none;
-  overflow: hidden;
-  float: right;
-  color: white;
-}
-
-.logo {
-  color: white;
-  float: left;
-  font-size: 24px;
-  padding-left: 10px;
-  margin-top: -15px;
-}
-
-
 footer {
   text-align: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600) {
+
 }
