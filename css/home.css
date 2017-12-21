@@ -1,0 +1,269 @@
+/*main*/
+body {
+  background: #1abc9c;
+  color: #222;
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0;
+}
+
+.wrapper {
+  display: none;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  font-family: "Roboto", "Comic Sans MS", sans-serif;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+  font-family: "Roboto", "Comic Sans MS", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: teal;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+}
+
+a:hover {
+  color: grey;
+}
+
+footer {
+  text-align: center;
+}
+
+/*home*/
+
+#container {
+  width: 50%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+#container p {
+  font-size: 20px;
+}
+
+.buttons {
+  text-align: center;
+  margin: 1em;
+  font-size: 20px;
+}
+.mainbutton {
+  background-color: #1abc9c;
+  color: white;
+  border: 2px solid white;
+  padding: .75em 3em;
+  margin: .5em;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+}
+
+.mainbutton:hover {
+  background: teal;
+  color: white;
+}
+
+/*keyboard*/
+#keyboard {
+  margin-left: 1em;
+  margin-right: 1em;
+  justify-content: center;
+  display: flex;
+  position: fixed;
+  bottom: -5px;
+}
+
+#corgi {
+  order: 1;
+  flex:0.8333;
+  align-self: flex-end;
+}
+
+#pug {
+  order: 2;
+  flex:0.6847;
+  align-self: flex-end;
+}
+
+#husky {
+  order: 3;
+  flex:0.8845;
+  align-self: flex-end;
+}
+
+#shiba {
+  order: 4;
+  flex:0.7429;
+  align-self: flex-end;
+}
+
+#pom {
+  order: 5;
+  flex:0.7620;
+  align-self: flex-end;
+}
+
+#golden {
+  order: 6;
+  flex:0.8845;
+  align-self: flex-end;
+}
+
+#chihuahua {
+  order: 7;
+  flex:0.4588;
+  align-self: flex-end;
+}
+
+.keyboard img {
+  max-width: 100%;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+}
+
+.keyboard:hover img {
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+.keyboard:active img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.attribution {
+  font-size: 12px;
+  max-width: 200px;
+  margin: auto;
+  display: none;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+}
+
+#keyatt {
+  font-size: 12px;
+}
+
+#reskey {
+  display: none !important;
+}
+
+
+/*media queries*/
+@media (max-width: 1400px) {
+  #container {
+    width: 70%;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  #keyboard {
+    display: none;
+  }
+
+  #container p, h2 {
+    padding: 0 1em;
+  }
+  #container {
+    margin: 0;
+    margin-top: 50px;
+    width: 100%;
+  }
+  .mainbutton {
+    display: block;
+  }
+
+  #reskey {
+    display: flex !important;
+    justify-content: center;
+    position: absolute;
+    bottom: auto;
+    margin: 0;
+    margin-top: -40px;
+  }
+
+  .keyboard2 img {
+    max-width: 100%;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+  }
+
+  .reskey1 {
+    height: 50px;
+    z-index: 0;
+    margin-top: 100px;
+  }
+
+  .reskey1 img {
+    transform: rotate(90deg);
+    margin-bottom: -60px;
+    margin-left: -50px;
+  }
+
+  .reskey2 {
+    height: 50px;
+    z-index: 1;
+  }
+
+  .reskey2 img {
+    transform: rotate(90deg);
+    margin-bottom: -60px;
+  }
+
+  #corgi2 {
+    order: 1;
+    flex:0.8333;
+    align-self: flex-end;
+  }
+
+  #pug2 {
+    order: 2;
+    flex:0.6847;
+    align-self: flex-end;
+  }
+
+  #husky2 {
+    order: 3;
+    flex:0.8845;
+    align-self: flex-end;
+  }
+
+  #shiba2 {
+    order: 4;
+    flex:0.7429;
+    align-self: flex-end;
+  }
+
+  #pom2 {
+    order: 5;
+    flex:0.7620;
+    align-self: flex-end;
+  }
+
+  #golden2 {
+    order: 6;
+    flex:0.8845;
+    align-self: flex-end;
+  }
+
+  #chihuahua2 {
+    order: 7;
+    flex:0.4588;
+    align-self: flex-end;
+    margin-top: -90px;
+    width: 75%;
+  }
+
+  .attribution {
+    display: none !important;
+  }
+}

@@ -4,36 +4,38 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BorkBork: Doggo Lingo</title>
-  <link rel="stylesheet" href="css/main.css">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/flexboxgrid.css" rel="stylesheet">
+  <link href="css/lingo.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
+  <div id="header">
+    <a href="index.html" id="logo"><p>BorkBork</p></a>
+    <button id="navicon">&#9776;</button>
+    <nav id="navbar">
+      <ul>
+        <li><a href="browse.html">Browse</a></li>
+        <li><a href="lingo.html">Doggo Lingo</a></li>
+      </ul>
+    </nav>
+  </div>
   <div class="wrapper">
-    <header>
-      <a href="index.html" class="logo"><p>BorkBork</p></a>
-      <button class="navicon">&#9776;</button>
-      <nav class="navbar">
-        <ul>
-          <li><a href="#browse">Browse</a></li>
-          <li><a href="lingo.html">DoggoLingo</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="container">
+    <div id="container">
       <h2>Doggo Lingo</h2>
-      <p>Doggo Lingo is an Internet language trend inspired by a shared love of dogs. Before its invention, when a dog or puppy was being extremely cute or funny, there weren't enough words to describe it. Thus, the Internet created words like doggo, pupper, floof, sploot, boof, bork and much more. These cutesy words appeared in memes and posts and soon the language expanded to include meme phrases that described dog memes.</p>
-      <h3>Words and Phrases</h3>
+      <p>Doggo Lingo is an Internet language trend inspired by a shared love of dogs. Before its advent, when a dog or puppy was being extremely cute or funny, there weren't enough words to describe it. Thus, the Internet created words like doggo, pupper, floof, sploot, boof, bork and much more. These cutesy words appeared in memes and posts and soon the language expanded to include meme phrases that described dog memes.</p>
+      <h2>Words and Phrases</h2>
       <table>
         <tr>
           <th>Word</th>
-          <th>Meaning/Function</th>
+          <th>What it is</th>
           <tr>
-            <td>Doggo/doge/woofer</td>
-            <td>Dog</td>
+            <td>Doggo/doge/<br>woofer/boofer</td>
+            <td>A dog</td>
           </tr>
           <tr>
             <td>Pupper/pupperino</td>
-            <td>Puppy</td>
+            <td>A puppy</td>
           </tr>
           <tr>
             <td>Floof/fluffer</td>
@@ -45,40 +47,71 @@
           </tr>
           <tr>
             <td>Corgo</td>
-            <td>Corgi</td>
+            <td>A corgi</td>
           </tr>
           <tr>
             <td>Shibe</td>
-            <td>Shiba</td>
+            <td>A shiba inu</td>
+          </tr>
+          <tr>
+            <td>Smol</td>
+            <td>Small</td>
+          </tr>
+          <tr>
+            <td>Loaf</td>
+            <td>A word used to describe a round dog that look like a loaf of bread</td>
           </tr>
           <tr>
             <td>Bork</td>
-            <td>A bark</td>
+            <td>A bark; popularized by Gabe the Dog covers</td>
+          </tr>
+          <tr>
+            <td>Gabe the Dog / Bork Remixes</td>
+            <td id="gabe" class="showmore">A series of videos of various music dubbed over by the <a href="https://www.youtube.com/user/deathtrips">deathtrip</a>'s miniature American Eskimo/Pomeranian dog named Gabe who passed early 2017; RIP sweet Gabe <i class="showmoreinfo">(Click to see)</i>
+              <iframe id="gabethedog" src="https://www.youtube.com/embed/c--etqIJcow?rel=0" frameborder="0" allowfullscreen></iframe>
+            </td>
           </tr>
           <tr>
             <td>Boof</td>
-            <td>A huffy sound that's not a bark and not a sneeze</td>
+            <td id="boof" class="showmore">A huffy sound that's not quite a bark or a sneeze, usually made when a doggo is alert <i class="showmoreinfo">(Click to see)</i>
+            <br>
+            <iframe id="boofer" src="https://www.youtube.com/embed/Clg0jfU8WXk?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+          </td>
           </tr>
           <tr>
             <td>Mlem</td>
-            <td>A sound to describe a dog licking its nose</td>
+            <td>A sound used to describe a dog licking its nose</td>
           </tr>
           <tr>
             <td>Sploot</td>
-            <td>When a dog lays down on its belly and hind legs spread wide behind</td>
+            <td id="sploot" class="showmore">When a dog lays down on its belly and has its hind legs spread wide behind <i class="showmoreinfo">(Click to see)</i>
+              <br>
+              <img id="splootex" src="images/sploot.jpg" alt="Corgo doing the sploot">
+              <p id="splootex2">"Mika's 'tocks" by Klara on <a href="https://www.flickr.com/photos/klara/2774165859/">flickr.com</a>, used under <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC BY-NC-SA 2.0</a></p>
+            </td>
           </tr>
           <tr>
             <td>Doing me a frighten</td>
-            <td>A phrase used to caption pictures of startled dogs</td>
+            <td id="frightening" class="showmore">A phrase used to caption pictures of startled dogs <i class="showmoreinfo">(Click to see)</i>
+              <br>
+              <img id="fright" src="images/frighten.jpg" alt="Stop son, you are doing me the frighten">
+              <p id="frighten">"Stop son, you are doing me the frighten" <a href="http://knowyourmeme.com/memes/stop-it-son-you-are-doing-me-a-frighten">meme</a></p>
+            </td>
           </tr>
           <tr>
-            <td>They're good dogs, Brent.</td>
-            <td>A quote from <a href="https://twitter.com/dog_rates"> @dog_rates</a>, a dog-rating Twitter, in response to another user questioning their rating system. <a href="http://knowyourmeme.com/memes/theyre-good-dogs-brent">More here.</a></td>
+            <td>they're good dogs, Brent.</td>
+            <td id="brant" class="showmore">A quote from <a href="https://twitter.com/dog_rates"> @dog_rates</a>, a dog-rating Twitter, in response to another user questioning their rating system. <a href="http://knowyourmeme.com/memes/theyre-good-dogs-brent">More here.</a> <i class="showmoreinfo">(Click to see)</i>
+              <br>
+              <img id="brent" src="images/brent.png" alt="Screencap of response">
+              <p id="bront"><a href="http://knowyourmeme.com/memes/theyre-good-dogs-brent">"they're good dogs, Brent"</a></p>
+            </td>
           </tr>
         </table>
-        <p> You can learn more about DoggoLingo <a href="https://www.npr.org/sections/alltechconsidered/2017/04/23/524514526/dogs-are-doggos-an-internet-language-built-around-love-for-the-puppers">here</a>.</p>
+        <footer>
+          <p> You can read more about DoggoLingo <a href="https://www.npr.org/sections/alltechconsidered/2017/04/23/524514526/dogs-are-doggos-an-internet-language-built-around-love-for-the-puppers">here</a>.</p>
+        </footer>
         <script src="js/jquery.min.js"></script>
-        <script src="js/script.js"></script>
+        <script src="js/lingo.js"></script>
       </div>
     </div>
   </body>

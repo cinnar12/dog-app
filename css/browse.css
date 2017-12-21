@@ -1,0 +1,296 @@
+body {
+  background: #1abc9c;
+  color: #222;
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0;
+}
+
+.wrapper {
+  display: none;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  font-family: "Roboto", "Comic Sans MS", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: teal;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+}
+
+a:hover {
+  color: grey;
+}
+
+footer {
+  text-align: center;
+}
+
+#container p {
+  font-size: 20px;
+}
+
+#header {
+  background: #1abc9c;
+  display: block;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  height: 45px;
+  z-index: 1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#header a{
+  color: white;
+}
+
+#header a:hover{
+  color: teal;
+}
+
+nav {
+  overflow: hidden;
+  float: right;
+  margin-top: -5px;
+}
+
+nav ul li{
+  display: inline-block;
+  margin-right: 15px;
+}
+
+#navicon {
+  float: right;
+  font-size: 16pt;
+  color: white;
+  background: none;
+  border: none;
+  display: none;
+  margin-top: 10px;
+  margin-right: 4px;
+}
+
+#logo {
+  font-size: 24px;
+  color: white;
+  float: left;
+  margin-left: 10px;
+  margin-top: -15px;
+  padding: 0;
+}
+
+#container {
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+select {
+  margin: 5px;
+  border: none;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+/*Dogs*/
+#browse{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/*Preview images*/
+.preview {
+  max-width: 30%;
+  z-index: 0;
+}
+
+.preview img {
+  width: 100%;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+}
+
+.preview:hover img {
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+.preview:active img{
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.preview button {
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+  background: none;
+  border: none;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+}
+
+.preview:hover button {
+  color: white;
+  background: teal;
+
+}
+
+/*Information boxes*/
+.close {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  color: grey;
+  background: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  text-align: center;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+}
+
+.close:hover {
+  color: teal;
+  background: lightgrey;
+}
+
+.facts {
+  display: none;
+  overflow: auto;
+  background: white;
+  border-radius: 5px;
+  width: 75%;
+  height: 95%;
+  margin: auto;
+  z-index: 1;
+  position: fixed;
+  bottom: -5px;
+}
+
+.facts article {
+  float: right;
+  width: 65%;
+}
+
+.facts img {
+  width: 30%;
+  float: left;
+}
+
+.browsecontent {
+  padding: 0 20px;
+  padding-bottom: 10px;
+}
+
+.attribution {
+  font-size: 12px;
+}
+
+
+@media (max-width: 1400px) {
+  #container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .preview {
+    max-width: 45%;
+  }
+
+  .facts article {
+    float: none;
+    width: 100%;
+  }
+
+  .facts img {
+    width: 75%;
+    float: none;
+    display: block;
+    margin: auto;
+  }
+
+  .attribution {
+    width: 90%;
+    display: block;
+    margin: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    background: white;
+    margin: 0;
+    width: 100%;
+    margin-top: -15px;
+    display: none;
+  }
+  nav ul li {
+    width: 100%;
+    margin-left: -19px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  nav ul li:hover {
+    background: lightgrey;
+  }
+
+  li a {
+    color: #222 !important;
+    padding: 10px;
+    display: block;
+  }
+
+  li a:hover {
+    color: #161616;
+  }
+
+  #container p {
+    padding: 0 1em;
+  }
+
+  #navicon {
+    display: block;
+  }
+
+  #container {
+    margin: 0;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .preview {
+    max-width: 100%;
+  }
+
+  .facts {
+    width: 100%;
+  }
+
+  .facts img {
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 601px) {
+  nav {
+    display: block !important;
+  }
+}
